@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Hello Coursera</title>
-</head>
-<body>
-<h1>Hello Coursera.. Its nice to learn here.</h1>
-</body>
+  <head>
+    <script>
+       function countWords(str)
+	{
+		var count = 0;
+		lines = str.split("\n");
+		characters = str.split(/\n|\s/).join('');
+		
+		str1 = str.replace(/\s/g,' ');
+		words = str1.split(' ');
+		
+		for ( i = 0; i< words.length; i++ )
+		{
+			if(words[i] != "")
+				count += 1;
+		}
+	document.theForm.results.value = "There are "+count+ " words in the text string you entered!\n"+"lines are: "+lines.length+"\nCharacters are "+characters.length;
+	}
+     </script>
+  </head>
+
+  <body>
+
+	<form name = "theForm" >
+	<h3>Enter a string </h3> <br>
+	<textarea name = "inStr" rows = "5" cols = "90">
+ 	</textarea>	<br><br>
+
+	<input type = "button" value = "Count words lines characters" onClick = "countWords(document.theForm.inStr.value)"; />
+	<input type = "button" name = "theButton" value = "clear results" onClick = 'document.theForm.results.value = ""'; />
+
+	Results <br><br>
+	<textarea name = "results" rows = "5" cols = "90" >
+	</textarea>
+
+	</form>
+  </body>
 </html>
