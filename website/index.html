@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
+  	<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
     <script>
-       function countWords(str)
+       function func()
 	{
-		var count = 0;
-		lines = str.split("\n");
-		characters = str.split(/\n|\s/).join('');
-		
-		str1 = str.replace(/\s/g,' ');
-		words = str1.split(' ');
-		
-		for ( i = 0; i< words.length; i++ )
-		{
-			if(words[i] != "")
-				count += 1;
-		}
-	document.theForm.results.value = "There are "+count+ " words in the text string you entered!\n"+"lines are: "+lines.length+"\nCharacters are "+characters.length;
+		document.write("<br>");
+		document.write("<h3>");
+		document.write("This is a demo text..");
+
 	}
      </script>
   </head>
 
-  <body>
-
+  <body><center>
+  	<br><br>
+  	<h1>Welcome to my page!!!</h1>
+  	<br><br>
 	<form name = "theForm" >
-	<h3>Enter a string </h3> <br>
-	<textarea name = "inStr" rows = "5" cols = "90">
- 	</textarea>	<br><br>
 
-	<input type = "button" value = "Count words lines characters" onClick = "countWords(document.theForm.inStr.value)"; />
-	<input type = "button" name = "theButton" value = "clear results" onClick = 'document.theForm.results.value = ""'; />
-
-	Results <br><br>
-	<textarea name = "results" rows = "5" cols = "90" >
-	</textarea>
-
+	<input type = "button" class = "button" value = "Click here!!" onClick = "func()"; />
+	
 	</form>
   </body>
 </html>
