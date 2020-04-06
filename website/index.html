@@ -18,9 +18,10 @@
     <script>
        function func()
 	{
+		var u = "This is a demo text";
 		document.write("<br>");
 		document.write("<h3>");
-		document.write("This is a demo text..");
+		document.getElementById("display").innerHTML = u;
 
 	}
      </script>
@@ -32,8 +33,9 @@
   	<br><br>
 	<form name = "theForm" >
 
-	<input type = "button" class = "button" value = "Click here!!" onClick = "func()"; />
+	<input type = "button" class = "button" value = "Click here!!" id = "try" onClick = "func()"; />
 	
+	<p><span id = "display"></span></p>
 	</form>
   </body>
 </html>
