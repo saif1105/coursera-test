@@ -1,0 +1,147 @@
+/* Base Styles */
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+	color: #000000;
+}
+
+body {
+	background-color: #e48767;
+	font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+	padding: 10px;
+	margin: 0;
+}
+
+.container {
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+section {
+	border:	1px solid black;
+	background-color: #4de6ff73;
+	width: 100%;
+	height: auto;
+    font-family: 'Roboto', sans-serif;
+	color: black;
+	position: relative;
+	overflow: auto;
+}
+
+#chicken {
+	text-align: center;
+	width: 30%;
+	margin-left: 35%;
+    font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 150%;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 5px;
+}
+
+#beef {
+	text-align: center;
+	width: 30%;
+	margin-left: 35%;
+    font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 150%;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 5px;
+}
+
+#sushi {
+	text-align: center;
+	width: 30%;
+	margin-left: 35%;
+    font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 150%;
+	margin-bottom: 0;
+	margin-top: 0;
+	color: white;*/
+	padding: 5px;
+}
+
+#chicken-div {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#beef-div {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#sushi-div {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.navbar-brand {
+  font-size: 2em;
+  border: 0 0 10px 10px;
+  color: #FFFFFF;
+}
+
+#header-nav {
+  border: 0;
+  background-color: #fcdec6;
+  color: #FFFFFF;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+.nav-header {
+  background-color: #FFFFFF;
+
+}
+
+.nav-brand {
+  color: #3a711a;
+  font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+  background: #E7E7E7;
+}
+
+#nav-list {
+  color: white;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+hr {
+  border-color: none;
+}
+
+
+.item {
+  color: black;
+  font-size: 1.4em;
+}
